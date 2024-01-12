@@ -90,13 +90,13 @@ def isNeighbor(word1, word2):
 
 class queue:
     def __init__(self):
-        self._queue=[]
+        self._queue=deque()
 
     def enqueue(self, node):
         self._queue.append(node)
 
     def dequeue(self):
-        return self._queue.pop(0)
+        return self._queue.popleft(0)
 
     def isEmpty(self):
         return len(self._queue)==0
