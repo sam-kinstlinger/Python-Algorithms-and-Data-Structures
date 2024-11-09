@@ -1,30 +1,3 @@
-'''
-Project Meta-Details:
-This is a data structures and algorithms project I worked on over the summer of 2023
-This project utilized knowledge of graphs, stacks, breadth-first search algorithm, and multiprocessing
-The run time for this program is approximately 1:45
-Note: For this program to run on a computer:
-    the word_list.100000.txt file in the same github repository as this program must be downloaded into the same directory as this file
-'''
-
-'''
-Game Overview: 
-Transform one word into another word of the same length
-Only change one letter at a time
-Given start word and end word, come up with the shortest possible chain of words that transform startWord to endWord (Enter start and end word at the bottom)
-'''
-
-'''
-The provided Python script implements a word transformation game using breadth-first search (BFS) and multiprocessing. 
-The program creates a graph where words are nodes, and edges connect words that differ by only one letter. 
-The script utilizes a WordNode class to represent each word in the graph, employing BFS to find the shortest path between a given start word and end word. 
-Multiprocessing is used to efficiently find and add neighbors for word nodes in parallel. 
-The algorithm achieves this by checking if two words are one letter apart and then forming links between them. 
-The code includes comprehensive comments, ensuring clarity and facilitating understanding of the underlying data structures and 
-algorithms involved in this word transformation game. The overall runtime of the program is approximately 1:45, 
-and it requires the "word_list.100000.txt" file in the same GitHub repository for execution.
-'''
-
 from multiprocessing import Process, Queue
 from collections import deque
 
